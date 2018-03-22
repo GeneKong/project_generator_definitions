@@ -54,6 +54,13 @@ PROGENDEF_TARGETS = {
             'interface': 'swd',
         }
     },
+    'disco-f469vg': {
+        'mcu':'mcu/st/stm32f469vg',
+        'debugger': {
+            'name': 'st-link',
+            'interface': 'swd',
+        }
+    },
     'disco-f746ng': {
         'mcu':'mcu/st/stm32f746ng',
         'debugger': {
