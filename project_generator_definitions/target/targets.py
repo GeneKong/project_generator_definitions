@@ -360,7 +360,8 @@ PROGENDEF_TARGETS = {
             'name': 'st-link',
             'interface': 'swd',
         }
-    },    'nucleo-f091rc': {
+    },
+    'nucleo-f091rc': {
         'mcu':'mcu/st/stm32f091rc',
         'debugger': {
             'name': 'st-link',
