@@ -1,0 +1,47 @@
+mcu:
+    vendor:
+        - st
+    name:
+        - stm32f469vg
+    core:
+        - cortex-m4
+tool_specific:
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - STM32F469VG ST STM32F469VG
+        OGCoreOrChip:
+          state:
+          - 1
+    uvision:
+        TargetOption:
+            Cpu:
+            - IROM(0x08000000,0x100000) IRAM(0x20000000,0x50000) CPUTYPE("Cortex-M4") CLOCK(12000000) ELITTLE
+            Device:
+            - STM32F469VG
+            DeviceId:
+            - 5118
+            FlashDriverDll:
+            - UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F469VG$CMSIS\Flash\STM32F4xx_1024.FLM))
+            SFDFile:
+            - $$Device:STM32F469VG$CMSIS\SVD\STM32F40x.svd
+            Vendor:
+            - STMicroelectronics
+    uvision5:
+        TargetOption:
+            Cpu:
+            - IROM(0x08000000,0x100000) IRAM(0x20000000,0x50000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE
+            Device:
+            - STM32F469VG
+            DeviceId:
+            - 5118
+            FlashDriverDll:
+            - UL2CM3(-S0 -C0 -P0 -FD20000000 -FC1000 -FN2 -FF0STM32F4xx_1024 -FS08000000 -FL0100000 -FP0($$Device:STM32F469VG$CMSIS\Flash\STM32F4xx_1024.FLM))
+            PackID:
+            - Keil.STM32F4xx_DFP.2.9.0
+            RegisterFile:
+            - $$Device:STM32F469VG$Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+            SFDFile:
+            - $$Device:STM32F469VG$CMSIS\SVD\STM32F40x.svd
+            Vendor:
+            - STMicroelectronics
