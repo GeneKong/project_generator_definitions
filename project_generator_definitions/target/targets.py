@@ -54,6 +54,13 @@ PROGENDEF_TARGETS = {
             'interface': 'swd',
         }
     },
+    'disco-f207vg': {
+        'mcu':'mcu/st/stm32f207vg',
+        'debugger': {
+            'name': 'st-link',
+            'interface': 'swd',
+        }
+    },
     'disco-f469vg': {
         'mcu':'mcu/st/stm32f469vg',
         'debugger': {
@@ -349,13 +356,6 @@ PROGENDEF_TARGETS = {
     },
     'nucleo-f103rb': {
         'mcu':'mcu/st/stm32f103xb',
-        'debugger': {
-            'name': 'st-link',
-            'interface': 'swd',
-        }
-    },
-    'stm32f103ze': {
-        'mcu':'mcu/st/stm32f103ze',
         'debugger': {
             'name': 'st-link',
             'interface': 'swd',
