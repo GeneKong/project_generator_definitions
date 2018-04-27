@@ -1,0 +1,47 @@
+mcu:
+    vendor:
+        - st
+    name:
+        - stm32f205rc
+    core:
+        - cortex-m3
+tool_specific:
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - STM32F405RC ST STM32F405RC
+        OGCoreOrChip:
+          state:
+          - 1
+    uvision:
+        TargetOption:
+            Cpu:
+            - IRAM(0x20000000-0x20017FFF) IROM(0x8000000-0x803FFFF) CLOCK(25000000) CPUTYPE("Cortex-M3")
+            Device:
+            - STM32F205RC
+            DeviceId:
+            - null
+            FlashDriverDll:
+            - null
+            RegisterFile:
+            - null
+            SFDFile:
+            -
+            Vendor:
+            - STMicroelectronics
+    uvision5:
+        TargetOption:
+            Cpu:
+            - IRAM(0x20000000-0x20017FFF) IROM(0x8000000-0x803FFFF) CLOCK(25000000) CPUTYPE("Cortex-M3")
+            Device:
+            - STM32F205RC
+            DeviceId:
+            - null
+            FlashDriverDll:
+            - null
+            RegisterFile:
+            - null
+            SFDFile:
+            - $$Device:STM32F207ZG$CMSIS\SVD\STM32F20x.svd
+            Vendor:
+            - STMicroelectronics

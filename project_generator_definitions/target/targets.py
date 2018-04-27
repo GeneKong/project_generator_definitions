@@ -54,6 +54,13 @@ PROGENDEF_TARGETS = {
             'interface': 'swd',
         }
     },
+    'disco-f205rc': {
+        'mcu':'mcu/st/stm32f205rc',
+        'debugger': {
+            'name': 'st-link',
+            'interface': 'swd',
+        }
+    },
     'disco-f207vg': {
         'mcu':'mcu/st/stm32f207vg',
         'debugger': {
